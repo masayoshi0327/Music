@@ -20,11 +20,20 @@ class ViewController: UIViewController {
     var player = AVAudioPlayer()
 
     @IBAction func play(_ sender: Any) {
-        
+        do {
+            player = try AVAudioPlayer(contentsOf: music, fileTypeHint: nil)
+            player.play()
+        } catch  {
+            print("再生できません")
+        }
     }
     
     @IBAction func stop(_ sender: Any) {
-        
+        do {
+            try player.stop()
+        } catch {
+            print("停止できません")
+        }
     }
     
     

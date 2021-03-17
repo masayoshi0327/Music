@@ -29,11 +29,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stop(_ sender: Any) {
-        do {
-            try player.stop()
-        } catch {
-            print("停止できません")
-        }
+        player.stop()
     }
     
     

@@ -16,7 +16,20 @@ class ViewController: UIViewController {
     }
     
     let music = Bundle.main.bundleURL.appendingPathComponent("A New Orleans Crawfish Boil - Unicorn Heads.mp3")
+    
+    var player = AVAudioPlayer()
 
-
+    @IBAction func play(_ sender: Any) {
+        
+    }
+    
+    @IBAction func stop(_ sender: Any) {
+        
+    }
+    
+    
+    
+    
+    
 }
 
